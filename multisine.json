@@ -1,0 +1,182 @@
+{
+  "name": "multisine",
+  "component": {
+    "df5bb750-e9fe-fbf3-26e0-bbd601fe98c9": {
+      "name": "sine",
+      "type": 10,
+      "outputDestinations": [
+        {
+          "type": "component",
+          "id": "19393795-03c6-401a-9ed2-2e7f7e93a801",
+          "inputIndex": 1
+        }
+      ],
+      "position": { "x": 616, "y": 50 },
+      "extendedData": {}
+    },
+    "4a16ece9-8a07-4214-b0b2-03dc228699ca": {
+      "name": "sine",
+      "outputDestinations": [
+        {
+          "type": "component",
+          "id": "19393795-03c6-401a-9ed2-2e7f7e93a801",
+          "inputIndex": 2
+        }
+      ],
+      "position": { "x": 630, "y": 243 },
+      "type": 10,
+      "extendedData": {}
+    },
+    "265f8659-a4a9-4afd-a843-45e70c0dc895": {
+      "name": "sine",
+      "outputDestinations": [
+        {
+          "type": "component",
+          "id": "d57c27e7-4934-4da0-bb46-655f776d84f7",
+          "inputIndex": 2
+        }
+      ],
+      "position": { "x": 642, "y": 452 },
+      "type": 10,
+      "extendedData": {}
+    },
+    "de8f1908-f60e-40d3-9d5f-e4468ffb3da8": {
+      "name": "amplifier",
+      "outputDestinations": [
+        {
+          "type": "component",
+          "id": "4a16ece9-8a07-4214-b0b2-03dc228699ca",
+          "inputIndex": 1
+        }
+      ],
+      "position": { "x": 369.5, "y": 238 },
+      "type": 0,
+      "extendedData": {}
+    },
+    "cd85f82d-5ac1-4d0c-a88f-0936473ac179": {
+      "name": "input",
+      "outputDestinations": [
+        {
+          "type": "component",
+          "id": "de8f1908-f60e-40d3-9d5f-e4468ffb3da8",
+          "inputIndex": 2
+        }
+      ],
+      "position": { "x": 53.5, "y": 275 },
+      "type": -1,
+      "extendedData": { "value": "2" }
+    },
+    "75deeba8-8b69-440e-aa13-0f58d05ba142": {
+      "name": "input",
+      "outputDestinations": [
+        {
+          "type": "component",
+          "id": "97b4e540-daea-42f6-b848-ab9c12f537de",
+          "inputIndex": 2
+        }
+      ],
+      "position": { "x": 56.5, "y": 483 },
+      "type": -1,
+      "extendedData": { "value": "4" }
+    },
+    "97b4e540-daea-42f6-b848-ab9c12f537de": {
+      "name": "amplifier",
+      "outputDestinations": [
+        {
+          "type": "component",
+          "id": "265f8659-a4a9-4afd-a843-45e70c0dc895",
+          "inputIndex": 1
+        }
+      ],
+      "position": { "x": 376.5, "y": 455 },
+      "type": 0,
+      "extendedData": {}
+    },
+    "2c6f79ba-dd5a-458b-88eb-08d00cbcf0c5": {
+      "name": "distributor",
+      "outputDestinations": [
+        {
+          "type": "component",
+          "id": "de8f1908-f60e-40d3-9d5f-e4468ffb3da8",
+          "inputIndex": 1
+        },
+        {
+          "type": "component",
+          "id": "df5bb750-e9fe-fbf3-26e0-bbd601fe98c9",
+          "inputIndex": 1
+        },
+        {
+          "type": "component",
+          "id": "97b4e540-daea-42f6-b848-ab9c12f537de",
+          "inputIndex": 1
+        }
+      ],
+      "position": { "x": 87.5, "y": 39 },
+      "type": 3,
+      "extendedData": {}
+    },
+    "19393795-03c6-401a-9ed2-2e7f7e93a801": {
+      "name": "mixer",
+      "outputDestinations": [
+        {
+          "type": "component",
+          "id": "d57c27e7-4934-4da0-bb46-655f776d84f7",
+          "inputIndex": 1
+        }
+      ],
+      "position": { "x": 926.5, "y": 102 },
+      "type": 7,
+      "extendedData": {}
+    },
+    "d57c27e7-4934-4da0-bb46-655f776d84f7": {
+      "name": "mixer",
+      "outputDestinations": [
+        {
+          "type": "component",
+          "id": "eaffae00-6471-44be-a0e1-1dbaee9b189f",
+          "inputIndex": 1
+        }
+      ],
+      "position": { "x": 1206.5, "y": 277 },
+      "type": 7,
+      "extendedData": {}
+    },
+    "eaffae00-6471-44be-a0e1-1dbaee9b189f": {
+      "name": "divider",
+      "outputDestinations": [{ "type": "sketchOutput" }],
+      "position": { "x": 1516, "y": 301 },
+      "type": 4,
+      "extendedData": {}
+    },
+    "e0372072-dd16-4918-9cff-513089059677": {
+      "name": "input",
+      "outputDestinations": [
+        {
+          "type": "component",
+          "id": "eaffae00-6471-44be-a0e1-1dbaee9b189f",
+          "inputIndex": 2
+        }
+      ],
+      "position": { "x": 1199, "y": 484 },
+      "type": -1,
+      "extendedData": { "value": "3" }
+    }
+  },
+  "inputs": [
+    {
+      "name": "frequency",
+      "destination": {
+        "type": "component",
+        "id": "2c6f79ba-dd5a-458b-88eb-08d00cbcf0c5",
+        "inputIndex": 1
+      }
+    },
+    { "name": "" },
+    { "name": "" },
+    { "name": "" },
+    { "name": "" },
+    { "name": "" },
+    { "name": "" },
+    { "name": "" }
+  ]
+}
