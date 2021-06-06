@@ -1,0 +1,157 @@
+{
+  "name": "ADC",
+  "component": {
+    "04e0e232-1dfc-4a39-ab87-6e9022bb1233": {
+      "name": "comparator",
+      "type": -7,
+      "outputDestinations": [{ "type": "sketchOutput" }],
+      "position": { "x": 301, "y": 41 },
+      "extendedData": {
+        "sketch": {
+          "name": "comparator",
+          "component": {
+            "37973807-3968-41e5-97bf-b261720ea12a": {
+              "name": "subtractor",
+              "outputDestinations": [
+                {
+                  "type": "component",
+                  "id": "c5af273d-ff5d-4f93-9e70-891b23a5db7e",
+                  "inputIndex": 1
+                }
+              ],
+              "position": { "x": 225, "y": 71 },
+              "type": 12,
+              "extendedData": {}
+            },
+            "c5af273d-ff5d-4f93-9e70-891b23a5db7e": {
+              "name": "amplifier",
+              "outputDestinations": [
+                {
+                  "type": "component",
+                  "id": "a90ec5a3-322f-49b2-891c-0ea91e58ad53",
+                  "inputIndex": 1
+                }
+              ],
+              "position": { "x": 542, "y": 139 },
+              "type": 0,
+              "extendedData": {}
+            },
+            "f987e73f-9b23-4351-9b39-cf41e1322f01": {
+              "name": "input",
+              "outputDestinations": [
+                {
+                  "type": "component",
+                  "id": "c5af273d-ff5d-4f93-9e70-891b23a5db7e",
+                  "inputIndex": 2
+                }
+              ],
+              "position": { "x": 222, "y": 297 },
+              "type": -1,
+              "extendedData": { "value": "1000000" }
+            },
+            "57f2323a-e517-4055-a6c6-6912c9214dd3": {
+              "name": "upper saturator",
+              "outputDestinations": [{ "type": "sketchOutput" }],
+              "position": { "x": 1122, "y": 136 },
+              "type": 14,
+              "extendedData": {}
+            },
+            "a90ec5a3-322f-49b2-891c-0ea91e58ad53": {
+              "name": "lower saturator",
+              "outputDestinations": [
+                {
+                  "type": "component",
+                  "id": "57f2323a-e517-4055-a6c6-6912c9214dd3",
+                  "inputIndex": 1
+                }
+              ],
+              "position": { "x": 838, "y": 142 },
+              "type": 6,
+              "extendedData": {}
+            },
+            "a44683f8-aad0-41d9-898c-0488b416c1f8": {
+              "name": "input",
+              "outputDestinations": [
+                {
+                  "type": "component",
+                  "id": "a90ec5a3-322f-49b2-891c-0ea91e58ad53",
+                  "inputIndex": 2
+                }
+              ],
+              "position": { "x": 540, "y": 334 },
+              "type": -1,
+              "extendedData": { "value": "0" }
+            },
+            "6171c69d-a848-487f-b310-609ae95fc1ce": {
+              "name": "input",
+              "outputDestinations": [
+                {
+                  "type": "component",
+                  "id": "57f2323a-e517-4055-a6c6-6912c9214dd3",
+                  "inputIndex": 2
+                }
+              ],
+              "position": { "x": 837, "y": 339 },
+              "type": -1,
+              "extendedData": { "value": "1" }
+            }
+          },
+          "inputs": [
+            {
+              "name": "in 1",
+              "destination": {
+                "type": "component",
+                "id": "37973807-3968-41e5-97bf-b261720ea12a",
+                "inputIndex": 1
+              }
+            },
+            {
+              "name": "in 2",
+              "destination": {
+                "type": "component",
+                "id": "37973807-3968-41e5-97bf-b261720ea12a",
+                "inputIndex": 2
+              }
+            },
+            { "name": "" },
+            { "name": "" },
+            { "name": "" },
+            { "name": "" },
+            { "name": "" },
+            { "name": "" }
+          ]
+        }
+      }
+    },
+    "3cf2dc96-2337-4348-ac30-882d90b1ac22": {
+      "name": "input",
+      "outputDestinations": [
+        {
+          "type": "component",
+          "id": "04e0e232-1dfc-4a39-ab87-6e9022bb1233",
+          "inputIndex": 1
+        }
+      ],
+      "position": { "x": 41, "y": 161 },
+      "type": -1,
+      "extendedData": { "value": "0.5" }
+    }
+  },
+  "inputs": [
+    {
+      "name": "in",
+      "destination": {
+        "type": "component",
+        "id": "04e0e232-1dfc-4a39-ab87-6e9022bb1233",
+        "inputIndex": 0
+      }
+    },
+    { "name": "" },
+    { "name": "" },
+    { "name": "" },
+    { "name": "" },
+    { "name": "" },
+    { "name": "" },
+    { "name": "" }
+  ]
+}
