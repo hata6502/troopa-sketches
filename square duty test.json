@@ -1,0 +1,138 @@
+{
+  "name": "square duty test",
+  "component": {
+    "d417eb39-d2d7-4023-a58f-f058658b7c40": {
+      "name": "speaker",
+      "outputDestinations": [],
+      "position": { "x": 1341, "y": 169 },
+      "type": -4,
+      "extendedData": {}
+    },
+    "e02d7ee9-dcf2-40ab-ba7f-8beac91e411b": {
+      "name": "input",
+      "outputDestinations": [
+        {
+          "type": "component",
+          "id": "8666d4c7-a616-48bc-be41-8af71f3399b4",
+          "inputIndex": 1
+        }
+      ],
+      "position": { "x": 770, "y": 105 },
+      "type": -1,
+      "extendedData": { "value": "440" }
+    },
+    "8666d4c7-a616-48bc-be41-8af71f3399b4": {
+      "name": "square",
+      "outputDestinations": [
+        {
+          "type": "component",
+          "id": "d417eb39-d2d7-4023-a58f-f058658b7c40",
+          "inputIndex": 1
+        }
+      ],
+      "position": { "x": 1072, "y": 169 },
+      "type": 11,
+      "extendedData": {}
+    },
+    "43e90f72-5919-4c80-9ad6-97dba36b7ee0": {
+      "name": "input",
+      "outputDestinations": [
+        {
+          "type": "component",
+          "id": "233988bd-3e3c-491c-bc5f-4eac224b465c",
+          "inputIndex": 2
+        }
+      ],
+      "position": { "x": 282, "y": 406 },
+      "type": -1,
+      "extendedData": { "value": "1" }
+    },
+    "27e471e8-2473-4324-8139-357025fcb786": {
+      "name": "sine",
+      "outputDestinations": [
+        {
+          "type": "component",
+          "id": "233988bd-3e3c-491c-bc5f-4eac224b465c",
+          "inputIndex": 1
+        }
+      ],
+      "position": { "x": 284, "y": 230 },
+      "type": 10,
+      "extendedData": {}
+    },
+    "06c35480-5512-454f-8213-44548dbb622d": {
+      "name": "input",
+      "outputDestinations": [
+        {
+          "type": "component",
+          "id": "27e471e8-2473-4324-8139-357025fcb786",
+          "inputIndex": 1
+        }
+      ],
+      "position": { "x": 46, "y": 238 },
+      "type": -1,
+      "extendedData": { "value": "1000000000000000000" }
+    },
+    "233988bd-3e3c-491c-bc5f-4eac224b465c": {
+      "name": "mixer",
+      "outputDestinations": [
+        {
+          "type": "component",
+          "id": "bd757450-e2c9-4631-a7ff-0707df6692e7",
+          "inputIndex": 1
+        }
+      ],
+      "position": { "x": 534, "y": 220 },
+      "type": 7,
+      "extendedData": {}
+    },
+    "bd757450-e2c9-4631-a7ff-0707df6692e7": {
+      "name": "divider",
+      "outputDestinations": [
+        {
+          "type": "component",
+          "id": "8666d4c7-a616-48bc-be41-8af71f3399b4",
+          "inputIndex": 2
+        },
+        {
+          "type": "component",
+          "id": "f8e7928b-f965-452c-8e67-0bcd82ec56c8",
+          "inputIndex": 1
+        }
+      ],
+      "position": { "x": 778, "y": 298 },
+      "type": 4,
+      "extendedData": {}
+    },
+    "80acb288-6ac8-40ec-98f8-afda02f902b3": {
+      "name": "input",
+      "outputDestinations": [
+        {
+          "type": "component",
+          "id": "bd757450-e2c9-4631-a7ff-0707df6692e7",
+          "inputIndex": 2
+        }
+      ],
+      "position": { "x": 534, "y": 411 },
+      "type": -1,
+      "extendedData": { "value": "2" }
+    },
+    "f8e7928b-f965-452c-8e67-0bcd82ec56c8": {
+      "name": "meter",
+      "outputDestinations": [],
+      "position": { "x": 1051, "y": 412 },
+      "type": -5,
+      "extendedData": { "value": 0.8982807397842407 }
+    }
+  },
+  "inputs": [
+    { "name": "" },
+    { "name": "" },
+    { "name": "" },
+    { "name": "" },
+    { "name": "" },
+    { "name": "" },
+    { "name": "" },
+    { "name": "" }
+  ]
+}
